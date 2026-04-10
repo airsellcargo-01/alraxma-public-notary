@@ -1,1 +1,9 @@
-Implements the Red (#FF4C4C) and Green (#39FF14) brand colors.
+:root {
+  --brand-red: #FF4C4C;
+  --brand-green: #39FF14;
+  --dark-bg: #1A1A1A;
+}
+body { font-family: sans-serif; margin: 0; background: #f4f4f4; }
+header { background: var(--dark-bg); color: white; padding: 1.5rem; border-bottom: 4px solid var(--brand-red); }
+.status-active { color: var(--brand-green); font-weight: bold; }
+button { background: var(--brand-red); color: white; border: none; padding: 10px 20px; cursor: pointer; }
