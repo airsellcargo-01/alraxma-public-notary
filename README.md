@@ -1,2 +1,2 @@
-# alraxma-public-notary
-Official Digital Public Notary Registry for Somaliland 
+# Alraxma Public Notary
+Digital-first legal verification powered by Airsell Cargo infrastructure.
