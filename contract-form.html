@@ -1,1 +1,62 @@
-The input page for digital rent contracts.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alraxma Notary | Create Contract</title>
+    <style>
+        :root {
+            --brand-red: #FF4C4C;
+            --brand-green: #39FF14;
+            --dark-bg: #1A1A1A;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background: #fdfdfd; margin: 0; padding: 0; }
+        header { background: var(--dark-bg); color: white; padding: 20px; text-align: center; border-bottom: 5px solid var(--brand-red); }
+        .container { max-width: 600px; margin: 40px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h2 { color: var(--dark-bg); border-left: 5px solid var(--brand-green); padding-left: 10px; }
+        label { display: block; margin: 15px 0 5px; font-weight: bold; color: #555; }
+        input, select { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
+        .btn-submit { background: var(--brand-red); color: white; border: none; padding: 15px; width: 100%; font-weight: bold; cursor: pointer; margin-top: 25px; transition: 0.3s; }
+        .btn-submit:hover { background: #e60000; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .footer-note { font-size: 12px; color: #888; text-align: center; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="margin:0;">ALRAXMA <span style="font-size:0.6em; color: var(--brand-green);">Public Notary</span></h1>
+</header>
+
+<div class="container">
+    <h2>Digital Contract Registration</h2>
+    <p>Please fill in the details for the official rental agreement.</p>
+    
+    <form action="https://github.com/airsellcargo-01/alraxma-public-notary/issues/new" method="get" target="_blank">
+        <input type="hidden" name="title" value="NEW CONTRACT: [Name Here]">
+        
+        <label>Landlord Full Name</label>
+        <input type="text" name="body" placeholder="As per NID/Passport" required>
+
+        <label>Tenant Full Name</label>
+        <input type="text" name="body" placeholder="As per NID/Passport" required>
+
+        <label>Monthly Rent (USD)</label>
+        <input type="number" name="body" placeholder="e.g. 450" required>
+
+        <label>Property Location</label>
+        <select name="body">
+            <option value="Hargeisa Hub">Hargeisa Hub</option>
+            <option value="Berbera Port Area">Berbera Port Area</option>
+            <option value="Other">Other Somaliland Region</option>
+        </select>
+
+        <button type="submit" class="btn-submit">GENERATE DIGITAL DRAFT</button>
+    </form>
+    
+    <div class="footer-note">
+        ● All documents are assigned a SHA-256 Hash for legal integrity.
+    </div>
+</div>
+
+</body>
+</html>
