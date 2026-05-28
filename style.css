@@ -1,24 +1,30 @@
-/* Base navbar styles (same as before) */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.invoice {
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+.invoice h2 {
+  color: #002850;
+  border-bottom: 2px solid #00aaff;
+  padding-bottom: 5px;
+}
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+.invoice-table th, .invoice-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+.invoice-table th {
   background-color: #002850;
-  padding: 15px 40px;
   color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
+.invoice-table tfoot td {
+  font-weight: bold;
 }
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
+
   transition: color 0.3s;
 }
 .nav-links a:hover {
