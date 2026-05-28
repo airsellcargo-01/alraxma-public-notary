@@ -1,81 +1,76 @@
-<html>
-<header>
-<header class="navbar">
-  <div class="logo">
-    <img src="images/airsell-logo.png" alt="Airsell Cargo Logo">
-    <span>AIRSELL CARGO</span>
-  </div>
-  <nav>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Track Shipment</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#quote" class="quote-btn">Get a Quote</a></li>
-    </ul>
-  </nav>
-  <div class="menu-toggle" id="menu-toggle">
-    ☰
-  </div>
-</header>
-
-</header>
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Airsell Cargo Letterhead</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      color: #333;
+    }
+    .letterhead {
+      border: 2px solid #002850;
+      padding: 20px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #00aaff;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 60px;
+      margin-right: 10px;
+    }
+    .company-info {
+      text-align: right;
+      font-size: 0.9em;
+      color: #002850;
+    }
+    .footer {
+      border-top: 2px solid #00aaff;
+      margin-top: 40px;
+      padding-top: 10px;
+      text-align: center;
+      font-size: 0.8em;
+      color: #555;
+    }
+  </style>
+</head>
 <body>
-<script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
+  <div class="letterhead">
+    <div class="header">
+      <div class="logo">
+        <img src="images/airsell-logo.png" alt="Airsell Cargo Logo">
+        <h2>AIRSELL CARGO</h2>
+      </div>
+      <div class="company-info">
+        <p>Hargeisa Airport (HGA) & Berbera Port (BBO)</p>
+        <p>📞 +252 63 333 3453</p>
+        <p>✉️ info@airsellcargo.com</p>
+      </div>
+    </div>
 
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-</script>
+    <!-- Body content area -->
+    <div class="content">
+      <p>Date: __________</p>
+      <p>To: __________</p>
+      <p>Subject: __________</p>
+      <br>
+      <p>Dear __________,</p>
+      <p>[Your letter content goes here...]</p>
+    </div>
 
-    <section class="hero">
-  <div class="overlay">
-    <h1>Connecting Somaliland to the World</h1>
-    <a href="#quote" class="cta-btn">Get a Quote</a>
+    <div class="footer">
+      © 2024 Airsell Cargo | Connecting Somaliland to the World
+    </div>
   </div>
-</section>
-
 </body>
-
-<footer>
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-column">
-      <h3>Contact Us</h3>
-      <p>Hargeisa, Somaliland</p>
-      <p>📞 +252 63 333 3453</p>
-      <p>✉️ info@airsellcargo.com</p>
-    </div>
-    <div class="footer-column">
-      <h3>Quick Links</h3>
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Services</a>
-      <a href="#">Track Shipment</a>
-      <a href="#">Get a Quote</a>
-    </div>
-    <div class="footer-column">
-      <h3>Follow Us</h3>
-      <a href="#">Facebook</a>
-      <a href="#">Twitter</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Instagram</a>
-    </div>
-  </div>
-  <div class="newsletter">
-    <input type="email" placeholder="Enter your email address">
-    <button>Subscribe</button>
-  </div>
-  <p class="copyright">
-    © 2024 Airsell Cargo. All Rights Reserved. | Privacy Policy | Terms & Conditions
-  </p>
-</footer>
-    
-</footer>
-    
 </html>
-
