@@ -63,4 +63,19 @@
   .menu-toggle {
     display: block;
   }
+
+  .signature-block {
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+  color: #002850;
+}
+.signature-line {
+  border-bottom: 2px solid #00aaff;
+  width: 250px;
+  margin: 20px 0;
+}
+.signature-block p {
+  margin: 5px 0;
+}
+
 }
