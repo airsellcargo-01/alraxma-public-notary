@@ -2,84 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Airsell Cargo Letterhead</title>
+  <title>Airsell Cargo | Official Document</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
       color: #333;
     }
-    .letterhead {
+    .page {
+      max-width: 800px;
+      margin: 40px auto;
       border: 2px solid #002850;
-      padding: 20px;
+      background: #fff;
     }
+    /* Header */
     .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 2px solid #00aaff;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
+      background: #002850;
+      color: #fff;
+      padding: 20px;
+      border-bottom: 4px solid #00aaff;
     }
-    .logo {
+    .header .logo {
       display: flex;
       align-items: center;
     }
-    .logo img {
+    .header .logo img {
       height: 60px;
       margin-right: 10px;
     }
-    .company-info {
+    .header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+    .header .contact {
       text-align: right;
       font-size: 0.9em;
-      color: #002850;
     }
+    /* Body */
+    .content {
+      padding: 40px;
+      min-height: 400px;
+    }
+    .content h2 {
+      color: #002850;
+      margin-top: 0;
+    }
+    /* Footer */
     .footer {
-      border-top: 2px solid #00aaff;
-      margin-top: 40px;
-      padding-top: 10px;
+      background: #eee;
       text-align: center;
-      font-size: 0.8em;
+      padding: 15px;
+      border-top: 2px solid #00aaff;
+      font-size: 0.85em;
       color: #555;
     }
   </style>
 </head>
 <body>
-  <div class="letterhead">
+  <div class="page">
+    <!-- Header -->
     <div class="header">
       <div class="logo">
-        <img src="logo.png" alt="Airsell Cargo Logo">
-        <h2>AIRSELL CARGO</h2>
+        <img src="images/airsell-logo.png" alt="Airsell Cargo Logo">
+        <h1>AIRSELL CARGO</h1>
       </div>
-      <div class="company-info">
+      <div class="contact">
         <p>Hargeisa Airport (HGA) & Berbera Port (BBO)</p>
         <p>📞 +252 63 333 3453</p>
         <p>✉️ info@airsellcargo.com</p>
       </div>
     </div>
 
-    <!-- Body content area -->
+    <!-- Body -->
     <div class="content">
+      <h2>Customer Communication</h2>
       <p>Date: __________</p>
       <p>To: __________</p>
       <p>Subject: __________</p>
       <br>
-      <p>Dear __________,</p>
-      <p>[Your letter content goes here...]</p>
+      <p>Dear Customer,</p>
+      <p>[Write your message here — e.g., shipment updates, quotations, or official notices.]</p>
+      <br>
+      <p>Sincerely,<br>Airsell Cargo Team</p>
     </div>
 
+    <!-- Footer -->
     <div class="footer">
       © 2024 Airsell Cargo | Connecting Somaliland to the World
     </div>
   </div>
-<div class="signature-block">
-  <p><strong>Authorized By:</strong></p>
-  <div class="signature-line"></div>
-  <p><strong>Name:</strong> __________________________</p>
-  <p><strong>Position:</strong> Operations Manager</p>
-  <p><strong>Date:</strong> __________________________</p>
-</div>
-
-  
 </body>
 </html>
